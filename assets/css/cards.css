@@ -1,0 +1,78 @@
+/* Ensure the grid container takes up the full width of its parent */
+.pdf-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two cards per row */
+  gap: 20px;
+}
+
+.card {
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  padding: 0.5rem;
+  width: 300px; /* Explicitly set the width */
+  margin: 0 auto; /* Center the card if there's extra horizontal space */
+}
+
+/* Adjust the grid container to flexibly accommodate the card widths */
+.pdf-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* This will adjust based on the container width */
+  gap: 20px;
+  justify-content: center; /* This will center the cards if there's extra space */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  margin-bottom: 1.5rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #60c864;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+}
+
+.btn-secondary {
+  background-color: #FFA726;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #e66a00;
+}
