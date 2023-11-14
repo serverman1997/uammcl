@@ -1,9 +1,25 @@
-/* Ensure the grid container takes up the full width of its parent */
-.pdf-grid {
-  width: 100%;
+.pdf-grid.first-row {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two cards per row */
+  grid-template-columns: repeat(4, 1fr); /* Four columns layout for the first row */
   gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pdf-grid.second-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns layout for the second row */
+  gap: 20px;
+  justify-content: center; /* Centering the second row */
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .pdf-grid.first-row,
+  .pdf-grid.second-row {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
 }
 
 .card {
@@ -16,14 +32,6 @@
   padding: 0.5rem;
   width: 300px; /* Explicitly set the width */
   margin: 0 auto; /* Center the card if there's extra horizontal space */
-}
-
-/* Adjust the grid container to flexibly accommodate the card widths */
-.pdf-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* This will adjust based on the container width */
-  gap: 20px;
-  justify-content: center; /* This will center the cards if there's extra space */
 }
 
 .card:hover {
@@ -75,4 +83,20 @@
 
 .btn-secondary:hover {
   background-color: #e66a00;
+}
+
+.photo-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.group-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* optional, for styled image corners */
+}
+
+.photo-description {
+  margin-top: 20px;
+  color: #fff; /* or any other color */
 }
