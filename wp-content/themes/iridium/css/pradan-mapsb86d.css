@@ -1,0 +1,269 @@
+
+#navbar {
+	width:100%;
+	float:left;
+	margin-top:15px;
+}
+#navbar ul{
+	padding:0 0 0 280px;
+	margin:0;
+}
+ #navbar ul li {
+	display: inline;
+	font-size:12px;
+}
+#navbar ul li .nav_link {
+ 	background-image:url(images/left.html);
+	background-position:left top;
+	background-repeat:no-repeat;
+	padding:0 0 0 10px;
+	float:left;
+	display:block;
+	color:#000;
+}
+#navbar ul li .nav_link span {
+ 	background-image:url(images/right.html);
+	background-position:right top;
+	background-repeat:no-repeat;
+	padding:9px 10px 8px 0;
+	float:left;
+	display:block;
+	color:#000;
+	margin-right:10px;
+}
+#navbar ul li .nav_link:hover {
+ 	background-image:url(images/left_m.html);
+	background-position:left top;
+	background-repeat:no-repeat;
+	color:#FFF;
+}
+#navbar ul li .nav_link:hover span {
+ 	background-image:url(images/right_m.html);
+	background-position:right top;
+	background-repeat:no-repeat;
+	color:#FFF;
+}
+
+
+#navbar ul li .nav_link_active {
+ 	background-image:url(images/left_m.html);
+	background-position:left top;
+	background-repeat:no-repeat;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+	float:left;
+	display:block;
+	padding:0 0 0 10px;
+}
+#navbar ul li .nav_link_active span {
+ 	background-image:url(images/right_m.html);
+	background-position:right top;
+	background-repeat:no-repeat;
+	color:#FFF;
+	float:left;
+	display:block;
+	margin-right:10px;
+	padding:9px 10px 8px 0;
+}
+#navbar ul li .nav_link_active:hover {
+ 	background-image:url(images/left_m.html);
+	background-position:left top;
+	background-repeat:no-repeat;
+	color:#FFF;
+	font-size:14px;
+	font-weight:bold;
+}
+#navbar ul li .nav_link:hover span {
+ 	background-image:url(images/right_m.html);
+	background-position:right top;
+	background-repeat:no-repeat;
+	color:#FFF;
+}
+
+
+
+
+#header {
+	width:100%;
+	float:left;
+	background-image:url(images/header_bg.html);
+	background-position:left bottom;
+	background-repeat:repeat-x;
+}
+.header_top {
+	border:1px solid #dadada;
+	border-bottom:0;
+	padding:10px;
+	padding-bottom:0;
+	float:left;
+	width:100%;
+	font-size:11px;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:none;
+}
+.logo {
+	float:left;
+}
+
+
+
+.serach_bg {
+	background-image:url(images/bg.html);
+	background-position:left top;
+	background-repeat:repeat-x;
+	float:left;
+	width:100%;
+	border:1px solid #1f7193;
+	color:#FFF;
+	margin-bottom:5px;
+}
+.serach_bg_left {
+	float:left;
+	margin-right:80px;
+	border-right:1px solid #69a5dc;
+	padding:15px 50px;
+}
+.serach_bg_right {
+	float:left;
+	padding:25px 0 0;
+}
+.serach_bg_right .input{
+	padding:8px;
+	color:#000;
+	border:1px solid #8d8888;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	width:300px;
+	float:left;
+	margin-right:10px;
+}
+#middle {
+	width:100%;
+	float:left;
+}
+.middle_left {
+	width:30%;
+	float:left;
+	background-color:#eee;
+	font-size:11px;
+	color:#000;
+	height:600px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+.middle_right {
+	float:right;
+	width: 70%
+}
+
+
+.out {
+	background-color:#d6e8ff;
+	width:100%;
+	display:block;
+	float:left;
+}
+.over {
+	background-color:#eaf4ff;
+	width:100%;
+	display:block;
+	float:left;
+}
+/* RAHUL */
+.map-nav ul{
+width:100%;
+text-align:center;
+}
+.map-nav ul li{
+display:inline-block !important;
+}
+.map-nav ul{
+padding:0 !important;
+}
+.map-nav a{
+    background: rgba(0,149,235,.7);
+    padding: 0px 18px 0 37px !important;
+    padding: 0px 18px 0 37px !important;
+}
+.map-nav a span{
+color:#fff !important;}
+.map-nav .nav_link_active{
+background:#eee !important;
+}
+.map-nav .nav_link_active span{
+	color:#000 !important;
+}
+.home-map .serach_bg{
+    background: #eee;
+    border: 0;
+}
+.home-map .map-nav li{
+	margin: 0 5px 0 0 !important;
+}
+.home-map .map-nav ul{
+	line-height: 0;
+}
+.home-map .map-nav ul li a{
+    padding: 16px !important;
+    text-align: center;
+    font-size: 14px  !important;
+}
+.home-map .map-nav ul li a span{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.home-map .serach_bg_right {
+    float: none !important;
+    padding: 25px 0 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+.home-map .map-nav ul li a:hover{
+	padding: 16px !important;
+	font-size: 14px  !important;
+}
+.home-map input[type="date"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, select:focus, textarea:focus{
+	background-color: #fff!important;
+    border-color: #a7a6a6 !important;
+}
+
+.home-map #sidebar div:nth-child(even){
+	background: #fff !important;
+
+}
+.home-map #sidebar div:nth-child(odd){
+	background: #eee !important;
+}
+.home-map #sidebar div:nth-child(1){
+	background:#0095eb !important;
+
+}
+.home-map #sidebar table{
+	margin-bottom: 0 !important;
+}
+.home-map .header_top{
+	border: 0 !important; 
+    border-bottom: 0 !important;
+    padding: 0 !important;
+    padding-bottom: 0 !important;
+    float: left !important;
+    width: 100% !important;
+    font-size: 0 !important;
+}
+
+.home-map .serach_bg_right .input{
+	font-size: 14px !important;
+}
+.home-map .serach_bg_right select{
+    background: url(../images/arrow.html);
+    background-repeat: no-repeat;
+    background-position: right 7px top 12px;
+    background-size: 21px;
+}
+/* RAHUL */

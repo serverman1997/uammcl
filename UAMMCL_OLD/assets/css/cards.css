@@ -1,0 +1,102 @@
+.pdf-grid.first-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns layout for the first row */
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pdf-grid.second-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns layout for the second row */
+  gap: 20px;
+  justify-content: center; /* Centering the second row */
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .pdf-grid.first-row,
+  .pdf-grid.second-row {
+    grid-template-columns: 1fr; /* Single column layout for smaller screens */
+  }
+}
+
+.card {
+  border-radius: 16px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  padding: 0.5rem;
+  width: 300px; /* Explicitly set the width */
+  margin: 0 auto; /* Center the card if there's extra horizontal space */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  margin-bottom: 1.5rem;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #60c864;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #218838;
+}
+
+.btn-secondary {
+  background-color: #FFA726;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #e66a00;
+}
+
+.photo-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.group-photo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px; /* optional, for styled image corners */
+}
+
+.photo-description {
+  margin-top: 20px;
+  color: #fff; /* or any other color */
+}

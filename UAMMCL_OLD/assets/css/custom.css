@@ -1,0 +1,157 @@
+﻿/* Place Your Custom Styles Here */
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover,
+.navbar-light .navbar-brand:focus,
+.navbar-dark .navbar-brand,
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+    color: inherit !important;
+}
+
+/* Override styles for logo position */
+.navbar,
+.navbar-brand {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body .navbar.navbar-light[data-navbar-scrolled="navbar-light"],
+body .navbar.navbar-dark[data-navbar-scrolled="navbar-dark"] {
+    background-color: transparent !important;
+}
+
+/* Ensure the logo retains its original color */
+body .navbar-brand,
+body .navbar-brand:hover,
+body .navbar-brand:focus {
+    color: inherit !important;
+}
+
+/* Ensure other navbar elements remain white */
+body .navbar .navbar-nav .nav-item .nav-link,
+body .navbar .navbar-nav .nav-item .nav-link:hover,
+body .navbar .navbar-nav .nav-item .nav-link:focus,
+body .navbar .navbar-toggler-icon {
+    color: white !important;
+}
+
+body .navbar-brand img.navbar-brand-img {
+    filter: none !important;
+    opacity: 1 !important;
+}
+
+/* Adjust padding for the navbar container */
+body .navbar {
+    padding-left: 30px !important;  /* Increase as needed */
+    padding-right: 30px !important; /* Increase as needed */
+}
+
+/* Ensure the burger menu remains white */
+body .navbar-toggler,
+body .navbar-toggler:focus,
+body .navbar-toggler:hover,
+body .navbar-toggler-icon {
+    background-color: white !important;
+    border-color: white !important;
+}
+
+body .navbar-toggler-icon {
+    filter: invert(1); /* This will turn a black icon to white */
+}
+
+/* Ensure the burger menu and its icon remain white */
+body .navbar-toggler,
+body .navbar-toggler-icon,
+body .navbar-toggler span {
+    background-color: white !important;
+    border-color: white !important;
+}
+
+body .navbar-toggler-icon,
+body .navbar-toggler span {
+    filter: invert(1) !important; /* Convert dark colors to white */
+}
+
+
+.icon-card {
+    background-color: rgba(255, 255, 255, 0.1);  /* semi-transparent white */
+    padding-left: 30px;
+    border-radius: 10px;
+    margin: 10px 0;  /* vertical spacing between cards */
+    display: flex;
+    flex-direction: column;  /* stack icon and text vertically */
+    align-items: center;  /* center content horizontally */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* smooth transition for hover effect */
+}
+
+.icon-card:hover {
+    transform: translateY(-10px);  /* subtle lift on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);  /* shadow effect on hover */
+}
+
+.icon-card .icon-7x {
+    margin-bottom: 15px;  /* spacing between icon and text */
+}
+
+/* Mobile responsiveness: adjust card layout for smaller screens */
+@media (max-width: 767px) {
+    .icon-card {
+        margin: 20px 0;  /* increased spacing between cards on mobile */
+    }
+}
+
+.mission-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.6; /* Translucency */
+    max-width: 100%; /* Ensuring the image doesn't overflow its container */
+    height: auto; /* Keeping the aspect ratio of the image */
+    border-radius: 15px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+  }
+  
+  /* Media query to increase size on larger screens */
+  @media (min-width: 768px) {
+    .video-container {
+      width: 80%; /* adjust as needed */
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .video-container {
+      width: 60%; /* adjust as needed */
+    }
+  }
+
+/* Translucent white background for expanded navbar on mobile */
+.navbar-collapse.show:before {
+    content: "";
+    background-color: rgb(0, 0, 0, 0.9); /* 0.8 indicates 80% opacity */
+    width: 100vw; /* Full viewport width */
+    position: absolute; /* Position it based on the navbar */
+    top: 0; /* Start from the top */
+    left: 0; /* Start from the left edge */
+    bottom: -30px; /* Extend to the bottom of the navbar */
+    z-index: -1; /* Place it behind the navbar content */
+}
+
+
+
