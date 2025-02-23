@@ -1,0 +1,20 @@
+/*
+Theme Name: iridium
+Author: iridium
+Description: iridium
+Theme URI: http://iridiuminteractive.com
+Author URI: http://iridiuminteractive.com
+License: iridium
+License URI: -
+Version: 12.8
+
+All css files are placed in /css/ folder
+*/
+
+#post-11320 .section .section_wrapper .single-photo-wrapper{
+	display:none!important;
+}
+
+.entry-title a span.new-one{
+	display:none!important; 
+}
